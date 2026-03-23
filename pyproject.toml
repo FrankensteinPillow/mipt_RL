@@ -4,4 +4,7 @@ version = "0.1.0"
 description = "MIPT RL homework repository"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "gymnasium>=1.2.3",
+    "matplotlib>=3.10.8",
+]
