@@ -1,0 +1,3 @@
+game,env_id,resolved_device,steps_completed,target_mean,target_std,success_threshold,best_mean_reward,final_mean_reward,final_std_reward,baseline_up_mean_reward,baseline_up_std_reward,n_steps,double_dqn,dueling,prioritized_replay,solved,history_path,plot_path
+Pong,ALE/Pong-v5,cuda,950000,18.9,1.3,17.599999999999998,18.1,18.3,1.1874342087037917,,,1,False,False,False,True,artifacts/eval_logs/pong_eval_history.csv,artifacts/plots/pong_learning_curve.png
+Freeway,ALE/Freeway-v5,cuda,1350000,30.3,0.7,29.6,31.05,30.8,1.0295630140987,22.0,1.9748417658131499,3,True,True,True,True,artifacts/eval_logs/freeway_eval_history.csv,artifacts/plots/freeway_learning_curve.png

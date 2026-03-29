@@ -1,0 +1,53 @@
+{
+  "game_config": {
+    "name": "Pong",
+    "env_id": "ALE/Pong-v5",
+    "dqn_target_mean": 18.9,
+    "dqn_target_std": 1.3,
+    "total_timesteps": 2000000,
+    "buffer_size": 80000,
+    "learning_starts": 20000,
+    "eval_freq": 50000,
+    "n_eval_episodes": 10,
+    "learning_rate": 0.0001,
+    "batch_size": 32,
+    "gamma": 0.99,
+    "train_freq": 4,
+    "gradient_steps": 1,
+    "target_update_interval": 10000,
+    "exploration_fraction": 0.1,
+    "exploration_initial_eps": 1.0,
+    "exploration_final_eps": 0.01,
+    "frame_skip": 4,
+    "frame_stack": 4,
+    "screen_size": 84,
+    "noop_max": 30,
+    "action_repeat_probability": 0.0,
+    "max_grad_norm": 10.0,
+    "terminal_on_life_loss": true,
+    "optimizer_name": "adam",
+    "optimizer_kwargs": {},
+    "n_steps": 1,
+    "optimize_memory_usage": true,
+    "double_dqn": false,
+    "dueling": false,
+    "prioritized_replay": false,
+    "prioritized_alpha": 0.6,
+    "prioritized_beta_start": 0.4,
+    "prioritized_beta_end": 1.0,
+    "prioritized_eps": 1e-06
+  },
+  "run_config": {
+    "games": [
+      "Pong",
+      "Freeway"
+    ],
+    "seed": 42,
+    "device": "auto",
+    "smoke_test": false,
+    "total_timesteps_override": null,
+    "eval_freq_override": null,
+    "n_eval_episodes_override": null
+  },
+  "resolved_device": "cuda"
+}
